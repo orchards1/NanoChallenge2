@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bME-Wr-J1P">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Onboarding Screen-->
+        <scene sceneID="ctJ-h8-gfP">
+            <objects>
+                <viewController storyboardIdentifier="Onboarding" id="bME-Wr-J1P" userLabel="Onboarding Screen" customClass="OnboardingViewController" customModule="NanoChallenge2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rsM-Dh-BK2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="1U2-wY-GjR">
+                                <rect key="frame" x="179.5" y="743" width="55" height="37"/>
+                                <color key="pageIndicatorTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="currentPageIndicatorTintColor" red="0.88831925389999999" green="0.43983727690000002" blue="0.42351442579999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </pageControl>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lrS-ET-GiW">
+                                <rect key="frame" x="0.0" y="-10" width="414" height="926"/>
+                                <color key="backgroundColor" red="0.10588336735963821" green="0.10588052123785019" blue="0.1058824434876442" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNO-6b-R8N">
+                                <rect key="frame" x="340" y="64" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="fuG-kR-fYE"/>
+                                    <constraint firstAttribute="height" constant="44" id="wwX-cw-nFN"/>
+                                </constraints>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" red="0.88831925389999999" green="0.43983727690000002" blue="0.42351442579999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonDidTapped:" destination="bME-Wr-J1P" eventType="touchUpInside" id="qld-3C-tWr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3C-mc-Q9h" customClass="GetStarted" customModule="NanoChallenge2" customModuleProvider="target">
+                                <rect key="frame" x="32" y="800" width="350" height="60"/>
+                                <color key="backgroundColor" red="0.88831925389999999" green="0.43983727690000002" blue="0.42351442579999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="0gc-Ca-PE6"/>
+                                    <constraint firstAttribute="width" constant="350" id="YTV-gP-FJs"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Get Started">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="nextButtonDidTapped:" destination="bME-Wr-J1P" eventType="touchUpInside" id="7eD-3b-2Wq"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter your name here!" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5R6-o6-U4I">
+                                <rect key="frame" x="77" y="359" width="260" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="260" id="0M0-Fw-dtj"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="260" id="AZR-CC-H0r"/>
+                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="50" id="NL9-gF-tSA"/>
+                                    <constraint firstAttribute="width" constant="260" id="dbu-YW-adz"/>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="iV9-Ne-sQr"/>
+                                    <constraint firstAttribute="height" constant="50" id="qfb-DA-dvw"/>
+                                </constraints>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="_placeholderLabel.textColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="placeHolderColor">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1U2-wY-GjR" firstAttribute="centerX" secondItem="0ww-Ip-HVf" secondAttribute="centerX" id="0BL-TR-3hB"/>
+                            <constraint firstItem="1U2-wY-GjR" firstAttribute="leading" secondItem="0ww-Ip-HVf" secondAttribute="leading" constant="179.5" id="2s6-GY-iVW"/>
+                            <constraint firstItem="0ww-Ip-HVf" firstAttribute="trailing" secondItem="5R6-o6-U4I" secondAttribute="trailing" constant="77" id="4AL-5K-Bsd"/>
+                            <constraint firstAttribute="bottom" secondItem="lrS-ET-GiW" secondAttribute="bottom" constant="-20" id="Dt2-fB-lFO"/>
+                            <constraint firstItem="lrS-ET-GiW" firstAttribute="centerY" secondItem="0ww-Ip-HVf" secondAttribute="centerY" id="Mgj-ZS-bd3"/>
+                            <constraint firstItem="lrS-ET-GiW" firstAttribute="width" secondItem="rsM-Dh-BK2" secondAttribute="width" id="QJI-vf-L8g"/>
+                            <constraint firstItem="P3C-mc-Q9h" firstAttribute="leading" secondItem="0ww-Ip-HVf" secondAttribute="leading" constant="32" id="Rzg-Sq-MQI"/>
+                            <constraint firstItem="0ww-Ip-HVf" firstAttribute="bottom" secondItem="P3C-mc-Q9h" secondAttribute="bottom" constant="2" id="X4j-sH-9gN"/>
+                            <constraint firstItem="P3C-mc-Q9h" firstAttribute="centerX" secondItem="0ww-Ip-HVf" secondAttribute="centerX" id="bNt-gP-RJv"/>
+                            <constraint firstItem="PNO-6b-R8N" firstAttribute="top" secondItem="0ww-Ip-HVf" secondAttribute="top" constant="20" id="cgY-YX-i1G"/>
+                            <constraint firstItem="0ww-Ip-HVf" firstAttribute="trailing" secondItem="1U2-wY-GjR" secondAttribute="trailing" constant="179.5" id="h7H-f1-KT2"/>
+                            <constraint firstItem="5R6-o6-U4I" firstAttribute="leading" secondItem="0ww-Ip-HVf" secondAttribute="leading" constant="77" id="nTv-yY-c7Y"/>
+                            <constraint firstItem="0ww-Ip-HVf" firstAttribute="trailing" secondItem="PNO-6b-R8N" secondAttribute="trailing" constant="30" id="oQt-NR-dmN"/>
+                            <constraint firstItem="5R6-o6-U4I" firstAttribute="top" secondItem="0ww-Ip-HVf" secondAttribute="top" constant="315" id="oT9-wV-LjG"/>
+                            <constraint firstItem="lrS-ET-GiW" firstAttribute="centerX" secondItem="0ww-Ip-HVf" secondAttribute="centerX" id="qMm-sQ-0Ni"/>
+                            <constraint firstItem="P3C-mc-Q9h" firstAttribute="top" secondItem="1U2-wY-GjR" secondAttribute="bottom" constant="20" id="rlH-KM-gIW"/>
+                            <constraint firstItem="1U2-wY-GjR" firstAttribute="top" secondItem="5R6-o6-U4I" secondAttribute="bottom" constant="334" id="xi4-Wx-7ma"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0ww-Ip-HVf"/>
+                    </view>
+                    <connections>
+                        <outlet property="buttonGetStarted" destination="P3C-mc-Q9h" id="uM9-id-iiv"/>
+                        <outlet property="nextButton" destination="P3C-mc-Q9h" id="sy1-7h-EOE"/>
+                        <outlet property="pageControl" destination="1U2-wY-GjR" id="DTr-oH-Hd1"/>
+                        <outlet property="scrollView" destination="lrS-ET-GiW" id="jkA-hE-Ejy"/>
+                        <outlet property="textField" destination="5R6-o6-U4I" id="qBM-yi-JnY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vG5-Dj-nLa" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1421.7391304347827" y="144.64285714285714"/>
+        </scene>
+    </scenes>
+</document>
